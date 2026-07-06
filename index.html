@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,10 +24,11 @@
         padding: 10px;
         margin: auto;
         color: springgreen;
+       
       }
       .main-container {
         width: 100%;
-        height: 100%;
+        height: auto;
         margin: auto;
         background-color: rgb(255, 255, 255, 0.5);
         border-radius: 10px;
@@ -46,11 +47,11 @@
       }
       .logo-section {
         width: 20%;
-        font-style:oblique;
+        font-style: oblique;
       }
       .link-section {
         width: 50%;
-        font-family:fantasy;
+        font-family: fantasy;
       }
       .link-section ul {
         list-style: none;
@@ -73,10 +74,10 @@
         border-style: dotted;
         border-radius: 20px;
       }
-      .btn span{
+      .btn span {
         background-color: mediumblue;
         color: white;
-        font-family:'Times New Roman', Times, serif;
+        font-family: "Times New Roman", Times, serif;
         padding: 5px;
         border-radius: 20px;
       }
@@ -92,13 +93,12 @@
         text-align: center;
         border-radius: 30px;
       }
-      .one h1{
+      .one h1 {
         position: relative;
-        text-shadow:0 0 15px whitesmoke;
+        text-shadow: 0 0 15px whitesmoke;
         padding: 20px 0;
-
       }
-      .one h1 span{
+      .one h1 span {
         color: rgb(195, 221, 244);
       }
       .two {
@@ -168,12 +168,18 @@
         padding: 20px 0;
       }
       .three-two p {
-        top: 50px;
+        padding: 20px 0;
         position: relative;
         font-family:
           "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 30px;
         text-shadow: 0 2px 8px red;
+      }
+      .three-two a{
+        text-decoration: none;
+        font-size: 30px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: 0 0 10px whitesmoke;
       }
       .four {
         width: 100%;
@@ -185,9 +191,10 @@
         background-color: green;
         position: relative;
       }
-      .four h2{
+      .four h2 {
         padding: 20px 0;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 30px;
       }
       .four-one {
@@ -221,7 +228,7 @@
         text-decoration: yellowgreen;
         padding: 5px 20px;
       }
-      .five{
+      .five {
         width: 100%;
         height: auto;
         box-sizing: border-box;
@@ -231,50 +238,85 @@
         align-items: center;
         gap: 20px;
       }
-      .five-one{
+      .five-one {
         width: 35%;
         height: auto;
         margin: auto;
-        
       }
-      .five-one h2{
+      .five-one h2 {
         position: relative;
         top: 30px;
         font-size: 28px;
         text-shadow: 0 0 10px rgb(25, 0, 255);
         color: white;
       }
-      .five-one h2 span{
+      .five-one h2 span {
         color: rgb(20, 4, 4);
         position: relative;
         text-shadow: 0 0 8px rgb(25, 0, 255);
         top: 20px;
       }
-      .five-two{
+      .five-two {
         width: 55%;
         height: auto;
         background-color: aquamarine;
       }
-      .five-two form{ 
-      padding: 10px;
-      background-color: yellowgreen;
+      .five-two form {
+        padding: 10px;
+        background-color: yellowgreen;
       }
-      .five-two form input{
+      .five-two form input {
         padding: 10px 20px;
         position: relative;
         display: block;
         margin: 20px auto;
         border-radius: 10px;
-       border-style:dotted;
+        border-style: dotted;
       }
-      .five-two form button{
-          padding: 10px 20px;
+      .five-two form button {
+        padding: 10px 20px;
         position: relative;
         display: block;
         margin: 20px auto;
         border-radius: 10px;
-       border-style:groove;
-       box-shadow: 0 0 15px rgb(0, 0, 255);
+        border-style: groove;
+        box-shadow: 0 0 15px rgb(0, 0, 255);
+      }
+       @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+      }
+     @media screen and (max-width: 768px) {
+        .dropdown-content {
+          position: static;
+          /* Ye content ko ek ke niche ek set kar dega */
+          box-shadow: none;
+          width: 100%;
+          display: none;
+          /* Default band rahega */
+        }
+
+        /* Mobile par click hone par dikhane ke liye hum ek class use kar sakte hain */
+        .dropdown.active .dropdown-content {
+          display: block;
+        }
+      }
+       @keyframes pulse-red {
+        0% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+        }
+
+        70% {
+          transform: scale(1);
+          box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);
+        }
+
+        100% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+        }
       }
     </style>
   </head>
@@ -295,7 +337,7 @@
         </div>
 
         <div class="btn">
-          <a href="quotation.html" target="_blank">
+          <a href="https://wa.me/917975280054" target="_blank">
             <button class="btn">
               <span>Get Free Quotation &nbsp; &#10148;</span>
             </button>
@@ -360,13 +402,17 @@
         <div class="three-two">
           <span>Our Introduction :</span>
           <h2>Expert Strategy, Flawless Execution</h2>
-          <p>+91 8151011005</p>
+          <p>+91 7975280054</p>
+          <a href="https://wa.me/917975280054">WhatsApp</a>
         </div>
       </div>
 
       <div class="four">
         <span><i> Our Latest Projects</i></span>
-        <h2>Let's &nbsp; Have &nbsp; A &nbsp; Look &nbsp; At &nbsp; Our &nbsp; Latest &nbsp; Projects</h2>
+        <h2>
+          Let's &nbsp; Have &nbsp; A &nbsp; Look &nbsp; At &nbsp; Our &nbsp;
+          Latest &nbsp; Projects
+        </h2>
         <div class="four-one">
           <h3>Road Freight</h3>
           <p>
@@ -418,16 +464,19 @@
           <p>Request a Call Back</p>
           <h2>
             Get &nbsp; A &nbsp; Free &nbsp; Quote <br />
-            <span> Today.</span></h2>
+            <span> Today.</span>
+          </h2>
         </div>
         <div class="five-two">
           <form action="">
             <input type="text" placeholder="Name" />
 
-            <input type="text" placeholder="From"required  />
-            <input type="text" placeholder="To"required  />
+            <input type="text" placeholder="From" required />
+            <input type="text" placeholder="To" required />
             <input type="text" placeholder="Date" required />
-            <button>Request Submit</button>
+            <a href="https://wa.me/917975280054" target="_blank">
+              <button>Request Submit</button></a
+            >
           </form>
         </div>
       </div>
