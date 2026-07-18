@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Willkommen Movers - Best Packers and Movers</title>
+    <style>
+      /* Global Resets */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0f2027;
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        color: #f5f5f5;
+        line-height: 1.5;
+      }
+      
+      .main-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 15px;
+      }
+
+      /* Navbar Layout Match */
+      .navbar {
+        position: sticky;
+        top: 0;
+        background: rgba(15, 32, 39, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 30px;
+      }
+      .logo-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .logo-section strong {
+        font-size: 22px;
+        color: #ff4e50;
+        letter-spacing: 1px;
+      }
+      .logo-section span {
+        font-size: 14px;
+        color: #8da2bb;
+        text-transform: uppercase;
+      }
+
+      .back-btn {
+        background: linear-gradient(45deg, #ff4e50, #f9d423);
+        color: #0f2027;
+        text-decoration: none;
+        padding: 10px 22px;
+        font-weight: bold;
+        border-radius: 25px;
+        box-shadow: 0 4px 15px rgba(255, 78, 80, 0.4);
+        transition: transform 0.3s ease;
+      }
+      .back-btn:hover {
+        transform: scale(1.05);
+      }
+
+      /* Main Structural Grid Split */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      /* Left Side: Message Form Box */
+      .form-wrapper {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 35px;
+        border-radius: 14px;
+      }
+      .form-wrapper h2 {
+        font-size: 28px;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .form-wrapper p {
+        color: #94a3b8;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        color: #cbd5e1;
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        color: white;
+        outline: none;
+        font-size: 15px;
+        transition: border-color 0.3s;
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        border-color: #ff4e50;
+      }
+
+      .submit-form-btn {
+        width: 100%;
+        background: #ff4e50;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .submit-form-btn:hover {
+        background: #e03e40;
+      }
+
+      /* Right Side: Office Info Box */
+      .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .info-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 14px;
+        border-left: 4px solid #f9d423;
+      }
+      .info-card h3 {
+        color: #f9d423;
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .info-card p {
+        color: #cbd5e1;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      /* Support Direct Action Elements */
+      .direct-action-btn {
+        display: block;
+        text-align: center;
+        background: #25d366;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        transition: background 0.3s;
+      }
+      .direct-action-btn:hover {
+        background: #1ebd54;
+      }
+
+      /* Responsive Rules */
+      @media (max-width: 768px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .form-wrapper {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      
+      <div class="navbar">
+        <div class="logo-section">
+          <strong>Willkommen</strong>
+          <span>Movers</span>
+        </div>
+        <a href="index.html" class="back-btn">&#11013; Back to Home</a>
+      </div>
+
+      <div class="contact-grid">
+        
+        <div class="form-wrapper">
+          <h2>Kiya Aapka Koi Sawaal Hai?</h2>
+          <p>Neeche diye gaye form mein apni details bharein, humari sales team 15 minutes ke andar aapse connect karegi.</p>
+          
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label>Aapka Naam (Name)</label>
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+            
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Enter your contact number" required />
+            </div>
+
+            <div class="form-group">
+              <label>Shifting Kahan Se Kahan Karni Hai?</label>
+              <input type="text" placeholder="E.g., Hisar to Delhi" required />
+            </div>
+
+            <div class="form-group">
+              <label>Koi Khaas Message Ya Requirement?</label>
+              <textarea rows="4" placeholder="Saman ki details ya koi sawal likhein..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-form-btn">Submit Form</button>
+          </form>
+        </div>
+
+        <div class="info-wrapper">
+          
+          <div class="info-card">
+            <h3>Hamara Head Office</h3>
+            <p>
+              Willkommen Movers & Logistics,<br />
+              Main Commercial Complex

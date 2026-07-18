@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Willkommen Movers - Best Packers and Movers</title>
+    <style>
+      /* Global Resets */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #0f2027;
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        color: #f5f5f5;
+        line-height: 1.5;
+      }
+      
+      .main-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 15px;
+      }
+
+      /* Navbar Style Match */
+      .navbar {
+        position: sticky;
+        top: 0;
+        background: rgba(15, 32, 39, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 30px;
+      }
+      .logo-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .logo-section strong {
+        font-size: 22px;
+        color: #ff4e50;
+        letter-spacing: 1px;
+      }
+      .logo-section span {
+        font-size: 14px;
+        color: #8da2bb;
+        text-transform: uppercase;
+      }
+
+      .back-btn {
+        background: linear-gradient(45deg, #ff4e50, #f9d423);
+        color: #0f2027;
+        text-decoration: none;
+        padding: 10px 22px;
+        font-weight: bold;
+        border-radius: 25px;
+        box-shadow: 0 4px 15px rgba(255, 78, 80, 0.4);
+        transition: transform 0.3s ease;
+      }
+      .back-btn:hover {
+        transform: scale(1.05);
+      }
+
+      /* Hero Section */
+      .about-hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 14px;
+        margin-bottom: 40px;
+        border: 1px solid rgba(255,255,255,0.05);
+      }
+      .about-hero span {
+        color: #ff4e50;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .about-hero h1 {
+        font-size: 38px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      .about-hero p {
+        color: #cbd5e1;
+        font-size: 17px;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.7;
+      }
+
+      /* Story & Mission Layout */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      }
+      .about-content h2 {
+        font-size: 28px;
+        color: #f9d423;
+        margin-bottom: 20px;
+      }
+      .about-content p {
+        color: #cbd5e1;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      /* Stats / Trust Counter Block */
+      .stats-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        background: linear-gradient(135deg, #1f4068, #162447);
+        padding: 40px;
+        border-radius: 14px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .stat-card h3 {
+        font-size: 36px;
+        color: #ff4e50;
+        margin-bottom: 5px;
+      }
+      .stat-card p {
+        color: #cbd5e1;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      /* Core Values Cards */
+      .values-section {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .values-section h2 {
+        font-size: 28px;
+        color: white;
+        margin-bottom: 35px;
+      }
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+      .value-card {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 12px;
+        text-align: left;
+        border-top: 4px solid #ff4e50;
+      }
+      .value-card h3 {
+        color: #f9d423;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .value-card p {
+        color: #94a3b8;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      /* Responsive Rules */
+      @media (max-width: 768px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .about-hero h1 {
+          font-size: 28px;
+        }
+        .about-content h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      
+      <div class="navbar">
+        <div class="logo-section">
+          <strong>Willkommen</strong>
+          <span>Movers</span>
+        </div>
+        <a href="index.html" class="back-btn">&#11013; Back to Home</a>
+      </div>
+
+      <section class="about-hero">
+        <span>Know More About Us</span>
+        <h1>Hamari Kahani Aur Kushtata</h1>
+        <p>
+          Willkommen Movers Hisar ka ek sabse vishwasniya packers aur movers brand hai. Humne shifting ki boring aur thaka dene wali process ko ek naye, safe aur stress-free experience mein badal diya hai.
+        </p>
+      </section>
+
+      <section class="about-grid">
+        <div class="about-image">
+          <img src="image/willkommen-packers-movers.jpeg" alt="Willkommen Team Work" />
+        </div>
+        <div class="about-content">
+          <h2>Kyun Bani Willkommen Movers Aapki Pehli Pasand?</h2>
+          <p>
+            Humari shuruat is unique aur clear vision ke sath hui thi ki logistics aur shifting ke market mein transparent pricing aur top-tier safety di jaye. Aaj market mein kai operators hain jo shifting ke dauran chhupaye hue charges lete hain ya saman ka dhyan nahi rakhte, par hum aisa nahi karte.
+          </p>
+          <p>
+            Hum har ek local ya domestic home shifting, office relocation, aur vehicle transport ke dauran special high-quality wrapping material ka use karte hain. Humare customer ka hamesha ek hi feedback hota hai—"Zero Damage aur Behtareen Shifting".
+          </p>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="stat-card">
+          <h3>500+</h3>
+          <p>Happy Shiftings</p>
+        </div>
+        <div class="stat-card">
+          <h3>100%</h3>
+          <p>Safety Record</p>
+        </div>
+        <div class="stat-card">
+          <h3>15+</h3>
+          <p>Expert Crew Members</p>
+        </div>
+        <div class="stat-card">
+          <h3>24/7</h3>
+          <p>Customer Support</p>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <h2>Humare Teen Mukhiya Siddhant (Core Values)</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>1. Suraksha Sabse Pehle</h3>
+            <p>Saman aapka hai, par zimmedari humari hai. Hum kisi bhi item ko pack karte waqt multi-layer bubble wraps aur heavy boxes use karte hain taaki raste ke jhatko se kuch kharab na ho.</p>
+          </div>
+          <div class="value-card">
+            <h3>2. Samay Ki Pabandi</h3>
+            <p>Hum samajhte hain ki shifting ke din samay kitna important hota hai. Humari team bataye gaye exact samay par pahunchti hai aur deadline ke andar delivery deti hai.</p>
+          </div>
+          <div class="value-card">
+            <h3>3. Koi Hidden Cost Nahi</h3>
+            <p>Jo quotation hum aapko start mein WhatsApp ya call par denge, end mein aapse wahi liya jayega. No extra charges, no surprises.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
